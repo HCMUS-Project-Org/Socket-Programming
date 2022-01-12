@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+    <style>
+            body {
+            background-image: url(./Pic/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+            }
+
+            .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+            }
+            @-webkit-keyframes snowflakes-fall {0%{top:-10%}100%{top:100%}}
+            @-webkit-keyframes snowflakes-shake {0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}
+            @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+            @keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+            /* http://pajasevi.github.io/CSSnowflakes/ */
+
+            #div1 {
+            text-align: center;
+            color: #2e5185;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 230px;
+            font-weight: bold;
+            }
+
+            #div2 {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+            margin-top: 230px;
+            text-shadow: 1px white;
+            }
+
+            .txtretroshadow {
+            color: #2c2c2c;
+            letter-spacing: 0.05em;
+            text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            .header {
+            width: 100%;
+            height: 30px;
+            background-color: #2e5185;
+            position: fixed;
+            margin-top: -8px;
+            margin-left: -8px;
+            padding-bottom: 15px;
+            }
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -200px;
+            width: 300px; 
+            height: 247px; 
+            }
+    </style>
+    <title>404</title>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <div class="header" >
+        <p style=" text-align: right; font-family: 'Montserrat', sans-serif; font-size: 15px;">404 - Error.</p> 
+     </div>
+    <div id="div1" class="txtretroshadow">
+        Oops!
+    </div>
+
+    <img src="./Pic/SantaClaus2.png" alt="Santa Claus" >
+
+    <div id="div2" style="padding-top: -100px;">
+        404 - PAGE NOT FOUND
+    </div>
+    <br>
+    <div id = "div2" style="font-size: 14px; margin-top: -15px; font-weight: lighter;">
+        The page you are looking for might have been removed <br>
+        had its name changed or is temporarily unavailable
+    </div>
+</body>
+</html>

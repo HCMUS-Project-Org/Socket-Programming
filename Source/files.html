@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+    <style>
+            body {
+            background-image: url(./Pic/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            color: white;
+            }
+
+            .snowflake {
+            color: #fff;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            text-shadow: 0 0 5px #000;
+            }
+            @-webkit-keyframes snowflakes-fall {0%{top:-10%}100%{top:100%}}
+            @-webkit-keyframes snowflakes-shake {0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}
+            @keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+            @keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+            /* http://pajasevi.github.io/CSSnowflakes/ */
+
+            #div1 {
+            text-align: center;
+            color: #2e5185;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 30px 50px 10px 50px;
+            background-color: rgb(246,246,246,0.7);
+            }
+
+            #div2 {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+            font-weight: bolder;
+            }
+
+            #div3 {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: lighter;
+            }
+
+
+
+            .header {
+            width: 100%;
+            height: 30px;
+            background-color: #2e5185;
+            position: fixed;
+            margin-top: -8px;
+            margin-left: -8px;
+            padding-bottom: 15px;
+            /* border-bottom: 1px solid #e8e3e3; */
+            }
+            .tble {
+            margin-top: -60px;
+            border: 7px solid #2e5185;
+            background-color: rgb(255, 255, 255,0.6);
+            color: black;
+            }
+            .txtretroshadow {
+            color: #2c2c2c;
+            letter-spacing: 0.05em;
+            text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
+            }
+            #border_right {
+                border-right: #2e5185 solid 5px;
+                padding-left: 30px;
+            }
+            #border_left {
+                border-left: #2e5185 solid 5px;
+                padding-left: 30px;
+            }
+            #sbmit{
+            border:none;
+            background:none;
+            padding:0;
+            text-align:left; 
+            text-decoration: underline;
+            color: #2e5185;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            }
+            .in input[type ="submit"]{
+                border:none;
+            background:none;
+            padding:0;
+            text-align:left; 
+            text-decoration: underline;
+            color: #2e5185;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            }
+            .in input[type ="submit"]:hover{
+                color: red;
+                text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+            }
+
+            img {
+            display: block;
+            margin-left: 32%;
+            width: 197px; 
+            height: 157px; 
+            }
+    </style>
+    <title>File</title>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+    </div>
+
+    <div class="header" id="div3" >
+        <p style=" text-align: right;"> Download File. </p> 
+     </div>
+
+     <!-- <img src="./Pic/LogoFIT.png" alt="LogoFIT"  > -->
+     <table align="center" class="txtretroshadow">
+        <td id="div1">
+            Download files
+        </td>
+    </table>
+
+     <!-- <div style="padding: 0px 0px 0px 0px;"></div> -->
+
+     <img src="./Pic/SantaClaus3.png" alt="Santa Claus"  >
+
+     <form action="http://127.0.0.1:2020" method="GET">
+        <table border="0" class="tble" align="center" id="div2" style="font-size: 14px; text-align: left;">
+            <tr id="div2" style="background-color: rgb(213,213,213,0.7);">
+                <td style="border-bottom: #2e5185 solid 5px; border-right: #2e5185 solid 5px; padding: 5px 130px;">
+                    Name
+                </td>
+                <td style="border-bottom: #2e5185 solid 5px; border-right: #2e5185 solid 5px; padding: 5px 40px;">
+                    Date modified
+                </td>
+                <td style="border-bottom: #2e5185 solid 5px; border-right: #2e5185 solid 5px; padding: 5px 15px;">
+                    Type
+                </td>
+                <td style="border-bottom: #2e5185 solid 5px; padding: 5px 20px;">
+                    Size                
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="Lorem_text.txt" name="submit">
+                        
+                </td>
+                <td id="border_right">
+                    2020-Dec-09 8:30 AM
+                </td>
+                <td id="border_right">
+                    Text
+                </td>
+                <td style="padding-left: 15px;">
+                    29.2 KB               
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="background.jpg" name="submit">
+                </td>
+                <td id="border_right">
+                    2007-Dec-07 4:32 PM
+                </td>
+                <td id="border_right">
+                    JPG
+                </td>
+                <td style="padding-left: 15px;">
+                    188 KB              
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="19127422_19127525.pdf" name="submit">
+                        
+                </td>
+                <td id="border_right">
+                    2020-Dec-09 8:30 AM
+                </td>
+                <td id="border_right">
+                    Text
+                </td>
+                <td style="padding-left: 15px;">
+                    29.2 KB               
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="Project_Socket_Programming_112020.pdf" name="submit">
+                    
+                </td>
+                <td id="border_right">
+                    2020-Nov-17 8:33 PM
+                </td>
+                <td id="border_right">
+                    PDF
+                </td>
+                <td style="padding-left: 15px;">
+                    649 KB             
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="01_Ethernet_Fundamentals.ppt" name="submit">
+                </td>
+                <td id="border_right">
+                    2007-May-22 7:22 PM
+                </td>
+                <td id="border_right">
+                    PPT
+                </td>
+                <td style="padding-left: 15px;">
+                    2.03 MB             
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="HoaNoKhongMauAcoustic-HoaiLam.mp3" name="submit">
+                </td>
+                <td id="border_right">
+                    2020-Dec-09 8:24 AM
+                </td>
+                <td id="border_right">
+                    MP3
+                </td>
+                <td style="padding-left: 15px;">
+                    4.95 MB             
+                </td>
+            </tr>
+            <tr>
+                <td id="border_right" class="in">
+                    <input type="submit" value="Hoa_No_Khong_Mau.mp4" name="submit">
+                </td>
+                <td id="border_right">
+                    2020-Dec-16 3:24 PM
+                </td>
+                <td id="border_right">
+                    MP4
+                </td>
+                <td style="padding-left: 15px;">
+                    17.6 MB            
+                </td>
+            </tr>
+        </table>
+     </form>
+</body>
+</html>
